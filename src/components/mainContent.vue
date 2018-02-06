@@ -11,9 +11,10 @@
             <span>内容管理</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="1-1">设备管理</el-menu-item>
-            <el-menu-item index="1-2">设备点检</el-menu-item>
-            <el-menu-item index="1-3">设备维护</el-menu-item>
+            <el-menu-item index="1-1" @click="orgListClick">组织概况</el-menu-item>
+            <el-menu-item index="1-2">设备管理</el-menu-item>
+            <el-menu-item index="1-3">设备点检</el-menu-item>
+            <el-menu-item index="1-4">设备维护</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
       </el-menu>
@@ -49,6 +50,9 @@ export default {
     },
     handleClose(key, keyPath) {
       //console.log(key, keyPath);
+    },
+    orgListClick() {
+      this.$router.push('orgList')
     }
   }
 }
