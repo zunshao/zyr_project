@@ -12,7 +12,7 @@
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1" @click="orgListClick">组织概况</el-menu-item>
-            <el-menu-item index="1-2">设备管理</el-menu-item>
+            <el-menu-item index="1-2" @click="deviceListClick">设备管理</el-menu-item>
             <el-menu-item index="1-3">设备点检</el-menu-item>
             <el-menu-item index="1-4">设备维护</el-menu-item>
           </el-menu-item-group>
@@ -29,7 +29,9 @@
 export default {
   data() {
     return {
-      key: ''
+      router: {
+        orgList: 'orgList'
+      }
     }
   },
   props: [
@@ -52,7 +54,10 @@ export default {
       //console.log(key, keyPath);
     },
     orgListClick() {
-      this.$router.push('orgList')
+      this.$router.push('/orgList')
+    },
+    deviceListClick() {
+      this.$router.push('/deviceList')
     }
   }
 }
