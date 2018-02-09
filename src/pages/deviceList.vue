@@ -51,6 +51,13 @@
         </template>
       </el-table-column>
     </el-table>
+    <el-pagination
+      class="device-page-box"
+      background
+      layout="prev, pager, next"
+      :total="1000"
+      :page-size="50">
+    </el-pagination>
   </div>
 </template>
 
@@ -104,6 +111,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -112,6 +120,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -120,6 +129,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -128,6 +138,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -136,6 +147,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -144,6 +156,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -152,6 +165,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -160,6 +174,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -168,6 +183,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -176,6 +192,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         },
@@ -184,6 +201,7 @@ export default {
           type: 'x9934f-11',
           status: '运行中',
           addTime: '2018-09-12',
+          jobPosition: '(*&^工位',
           shop: '***&^^%%&(*)()___l车间',
           factory: ')(*(***&************分公司'
         }
@@ -209,4 +227,9 @@ export default {
 </script>
 
 <style scoped>
+  .device-page-box{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+  }
 </style>
