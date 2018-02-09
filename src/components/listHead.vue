@@ -18,6 +18,14 @@
           :value="item.value">
         </el-option>
       </el-select>
+      <el-select v-model="shopResult" placeholder="请选择工位 " class="headCheckShop">
+        <el-option
+          v-for="item in configData.shopList"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value">
+        </el-option>
+      </el-select>
       <el-button type="primary" class="headButton">查询</el-button>
     </div>
   </div>

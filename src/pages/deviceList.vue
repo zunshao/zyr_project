@@ -29,6 +29,11 @@
         width="150">
       </el-table-column>
       <el-table-column
+        prop="jobPosition"
+        width="120"
+        label="所属工位">
+      </el-table-column>
+      <el-table-column
         prop="shop"
         label="所属车间">
       </el-table-column>

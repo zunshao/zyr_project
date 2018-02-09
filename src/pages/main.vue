@@ -15,23 +15,39 @@
       <div class="show-total-detail">
         <span>分公司数：</span>
         <div class="show-factory-num">9</div>
-        <span>车间数：</span>
-        <div class="show-shop-num">2</div>
+        <span>车间总数：</span>
+        <div class="show-shop-num">200</div>
+        <span>工位总数：</span>
+        <div class="show-jobPosition-num">2000</div>
       </div>
       <div>
-        <el-button size="medium">添加分公司</el-button>
-        <el-button size="medium">添加车间</el-button>
+        <el-button size="medium">组织编辑</el-button>
       </div>
     </el-card>
     <el-card class="box-card-device">
       <h6>设备记录</h6>
       <div class="show-device-detail">
-        <span>设备数：</span>
-        <div class="device-num">9</div>
-        <span>维修记录：</span>
-        <div class="device-modify-num">2</div>
-        <span>点检记录：</span>
-        <div class="device-check-num">2</div>
+        <div class="device-total-num detail">
+          <span>设备统计：</span>
+          <ul>
+            <li><span class="detail-title">设备总数:</span><el-button plain size="small" class="detail-button">32333</el-button></li>
+          </ul>
+        </div>
+        <div class="device-check-num detail">
+          <span>点检记录：</span>
+          <ul>
+            <li><span class="detail-title">正常：</span><el-button plain size="small" class="detail-button">32333</el-button></li>
+            <li><span class="detail-title">已处理：</span><el-button class="detail-button" type="success" plain size="small">3345</el-button></li>
+            <li><span class="detail-title">当前异常：</span><el-button class="detail-button" type="danger" plain size="small">890</el-button></li>
+          </ul>
+        </div>
+        <div class="device-check-num detail">
+          <span>维修记录：</span>
+          <ul>
+            <li><span class="detail-title">已处理：</span><el-button class="detail-button" type="success" plain size="small">3345</el-button></li>
+            <li><span class="detail-title">维修中：</span><el-button class="detail-button" type="danger" plain size="small">890</el-button></li>
+          </ul>
+        </div>
       </div>
     </el-card>
   </div>
@@ -80,6 +96,7 @@ export default {
     position: absolute;
     left: .5rem;
     top: .5rem;
+    font-weight: bold;
   }
   .box-card .right{
     float: left;
@@ -92,7 +109,7 @@ export default {
   }
   .box-card-total{
     display: inline-block;
-    width: 22rem;
+    width: 32rem;
     margin-left: 1rem;
     padding-top: 1.2rem;
     position: relative;
@@ -114,36 +131,40 @@ export default {
     line-height: 1.8rem;
     background-color: #007aff;
     border-radius: 5px;
-    cursor: pointer;
   }
   .box-card-device{
-    width: 41.2rem;
+    width: 51.2rem;
     display: block;
     position: relative;
     padding-top: 1.2rem;
-    height: 8.6rem;
+    height: 14.6rem;
     margin-top: 1rem;
   }
-  .show-device-detail span, .show-device-detail div{
-    display: inline-block;
-  }
-  .show-device-detail div{
-    width: 4rem;
-    height: 1.8rem;
-    text-align: center;
-    color: #fff;
-    line-height: 1.8rem;
-    background-color: #007aff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: .8rem;
-  }
   .show-device-detail{
-    margin-top: 1.4rem;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .show-device-detail .detail{
+    float: left;
+    margin-left: 3.8rem;
   }
   .box-main{
-    width: 50rem;
+    width: fit-content;
     margin: 0 auto;
     margin-top: 2rem;
+  }
+  .show-device-detail ul{
+    margin-top: .5rem;
+    margin-left: 1.2rem;
+  }
+  .show-device-detail ul li{
+    margin-bottom: .4rem;
+  }
+  .show-device-detail .detail-title{
+    display: inline-block;
+    width: 5.6rem;
+  }
+  .box-card-device .detail-button{
+    width: 4rem;
   }
 </style>

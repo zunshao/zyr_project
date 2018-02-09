@@ -2,11 +2,11 @@
   <div class = "organizationList-box">
     <h6>组织概况</h6>
     <list-detail></list-detail>
+    <!--<list-detail></list-detail>
     <list-detail></list-detail>
     <list-detail></list-detail>
     <list-detail></list-detail>
-    <list-detail></list-detail>
-    <list-detail></list-detail>
+    <list-detail></list-detail>-->
   </div>
 </template>
 
